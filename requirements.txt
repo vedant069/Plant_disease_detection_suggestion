@@ -1,0 +1,12 @@
+streamlit
+opencv-python-headless
+Pillow
+tensorflow
+fastai
+torch
+langchain
+ctransformers
+sentencepiece
+scikit-learn
+numpy
+gdown
