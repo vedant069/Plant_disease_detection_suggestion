@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlproject
+  labels:
+    app: mlproject
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlproject
+  template:
+    metadata:
+      labels:
+        app: mlproject
+    spec:
+      containers:
+        - name: mlproject
+          image: vedantnadhe/plant_disease_detection_suggestion
+          ports:
+            - containerPort: 8501  # Default port for Streamlit
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
