@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mlproject
-          image: vedantnadhe/plant_disease_detection_suggestion
+          image: vedantnadhe/plant_disease_detection_suggestion2
           ports:
             - containerPort: 8501  # Default port for Streamlit
           resources:

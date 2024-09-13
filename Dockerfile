@@ -16,5 +16,6 @@ COPY . .
 # Expose Streamlit's default port
 EXPOSE 8501
 
-# Command to run the Streamlit app
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# First run the script to download the model, then start the Streamlit app
+CMD ["bash", "-c", "python download_model.py && streamlit run app.py --server.port=8501 --server.address=0.0.0.0"]
+
