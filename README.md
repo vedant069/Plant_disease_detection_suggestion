@@ -1,2 +1,0 @@
-# Plant_disease_detection_suggestion
-Plant_disease_detection_suggestion
